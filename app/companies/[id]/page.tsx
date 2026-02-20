@@ -141,7 +141,7 @@ export default function CompanyProfilePage({ params }: { params: Promise<{ id: s
                         </div>
                         <div className="flex flex-wrap gap-1.5 mt-2">
                             {company.tags.map((tag) => (
-                                <Link key={tag} href={`/companies?tag=${encodeURIComponent(tag)}`} className="tag-chip hover:bg-slate-200 cursor-pointer transition-colors">
+                                <Link key={tag} href={`/companies?tag=${encodeURIComponent(tag)}`} className="tag-chip">
                                     {tag}
                                 </Link>
                             ))}

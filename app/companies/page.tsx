@@ -80,10 +80,14 @@ function CompaniesContent() {
     // Filter and search
     const filteredCompanies = useMemo(() => {
         let result = companies.map(c => {
-            const cached = typeof window !== 'undefined' ? getCachedEnrichment(c.id) : null;
+            const THESIS_TAGS = ["ai", "deeptech", "b2b", "saas", "llm", "developer-tools", "climate", "fintech"];
+            const matchingTags = c.tags.filter(t => THESIS_TAGS.includes(t.toLowerCase()));
+            const matchScore = Math.round((matchingTags.length / THESIS_TAGS.length) * 100);
+
             return {
                 ...c,
-                match: cached?.thesisMatch?.score
+                match: matchScore,
+                matchedTags: matchingTags
             };
         });
 
@@ -111,8 +115,8 @@ function CompaniesContent() {
         // Sort
         result.sort((a, b) => {
             if (sortField === 'match') {
-                const aVal = typeof a.match === 'number' ? a.match : -1;
-                const bVal = typeof b.match === 'number' ? b.match : -1;
+                const aVal = typeof a.match === 'number' ? a.match : 0;
+                const bVal = typeof b.match === 'number' ? b.match : 0;
                 return sortDirection === 'asc' ? aVal - bVal : bVal - aVal;
             }
             const aVal = a[sortField];
@@ -219,14 +223,13 @@ function CompaniesContent() {
 
             {/* Active Tag Filter */}
             {urlTag && (
-                <div className="mb-4 flex items-center gap-2">
-                    <span className="text-sm font-medium text-muted">Filtered by:</span>
+                <div className="mb-4">
                     <button
                         onClick={() => updateURL({ tag: '' })}
-                        className="tag-chip flex items-center gap-1.5 hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition-colors group"
+                        className="tag-chip flex items-center gap-1.5"
                     >
-                        {urlTag}
-                        <svg className="text-muted group-hover:text-red-500" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        Filtered by: {urlTag}
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M18 6 6 18" />
                             <path d="m6 6 12 12" />
                         </svg>

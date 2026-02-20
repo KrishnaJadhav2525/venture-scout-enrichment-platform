@@ -53,12 +53,40 @@ export default function SavedSearchesPage() {
 
             {/* Searches */}
             {searches.length === 0 ? (
-                <div className="card p-12 text-center">
-                    <svg className="mx-auto mb-4 text-muted" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-                    </svg>
-                    <h3 className="text-base font-semibold text-foreground mb-1">No saved searches</h3>
-                    <p className="text-sm text-muted">Save a search from the Companies page to see it here.</p>
+                <div className="space-y-8">
+                    <div className="card p-12 text-center">
+                        <svg className="mx-auto mb-4 text-muted" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                        </svg>
+                        <h3 className="text-base font-semibold text-foreground mb-1">No saved searches</h3>
+                        <p className="text-sm text-muted">Save a search from the Companies page to see it here.</p>
+                    </div>
+
+                    <div>
+                        <h4 className="text-sm font-semibold text-foreground mb-4 text-center">How it works</h4>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div className="bg-gray-50 rounded-xl border border-gray-100 p-4 text-center">
+                                <svg className="mx-auto mb-2 text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" /></svg>
+                                <h5 className="font-bold text-sm text-foreground mb-1">Set Filters</h5>
+                                <p className="text-xs text-muted">Apply filters and search on the Companies page</p>
+                            </div>
+                            <div className="bg-gray-50 rounded-xl border border-gray-100 p-4 text-center">
+                                <svg className="mx-auto mb-2 text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" /></svg>
+                                <h5 className="font-bold text-sm text-foreground mb-1">Save Search</h5>
+                                <p className="text-xs text-muted">Click Save Search to bookmark your filter combo</p>
+                            </div>
+                            <div className="bg-gray-50 rounded-xl border border-gray-100 p-4 text-center">
+                                <svg className="mx-auto mb-2 text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                                <h5 className="font-bold text-sm text-foreground mb-1">Re-run Anytime</h5>
+                                <p className="text-xs text-muted">Come back and re-run with one click</p>
+                            </div>
+                        </div>
+                        <div className="mt-8 text-center">
+                            <button onClick={() => router.push('/companies')} className="inline-flex items-center gap-2 border border-indigo-400 text-indigo-600 rounded-md px-4 py-2 text-sm font-medium hover:bg-indigo-50 transition">
+                                ← Browse Companies
+                            </button>
+                        </div>
+                    </div>
                 </div>
             ) : (
                 <div className="space-y-3">

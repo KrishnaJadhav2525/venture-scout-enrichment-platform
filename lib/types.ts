@@ -37,6 +37,7 @@ export interface Company {
   signals: Signal[];
   enriched: EnrichedData | null;
   match?: number;
+  matchedTags?: string[];
 }
 
 export interface VCList {

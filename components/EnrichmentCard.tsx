@@ -15,7 +15,7 @@ export default function EnrichmentCard({ data }: EnrichmentCardProps) {
     });
 
     return (
-        <div className="card p-5 border-primary/20 bg-indigo-50/30">
+        <div className="card p-5 pb-6 h-auto overflow-visible border-primary/20 bg-indigo-50/30">
             {/* Header */}
             <div className="flex items-center gap-2 mb-4">
                 <div className="w-7 h-7 rounded-md bg-primary/10 flex items-center justify-center">
@@ -54,7 +54,7 @@ export default function EnrichmentCard({ data }: EnrichmentCardProps) {
                     <h5 className="text-xs font-semibold text-muted uppercase tracking-wider mb-1.5">Keywords</h5>
                     <div className="flex flex-wrap gap-1.5 mt-2">
                         {data.keywords.map((kw, idx) => (
-                            <Link key={idx} href={`/companies?tag=${encodeURIComponent(kw)}`} className="badge badge-indigo hover:bg-indigo-100 cursor-pointer transition-colors">
+                            <Link key={idx} href={`/companies?tag=${encodeURIComponent(kw)}`} className="tag-chip">
                                 {kw}
                             </Link>
                         ))}

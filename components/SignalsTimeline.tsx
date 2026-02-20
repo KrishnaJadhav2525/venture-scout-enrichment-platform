@@ -21,25 +21,22 @@ export default function SignalsTimeline({ signals }: SignalsTimelineProps) {
 
     const getCategoryBadge = (text: string) => {
         const lower = text.toLowerCase();
-        if (lower.includes('fund') || lower.includes('raise') || lower.includes('seed')) return { label: 'Funding', color: 'badge-blue' };
-        if (lower.includes('hir') || lower.includes('join') || lower.includes('appoint')) return { label: 'Hire', color: 'badge-indigo' };
-        if (lower.includes('launch') || lower.includes('releas') || lower.includes('product')) return { label: 'Launch', color: 'badge-green' };
-        if (lower.includes('press') || lower.includes('featur') || lower.includes('award')) return { label: 'Press', color: 'badge-gray' };
-        return { label: 'Update', color: 'badge-gray' };
+        if (lower.includes('fund') || lower.includes('raise') || lower.includes('seed')) return { label: 'Funding', color: 'badge-green', dotColor: 'bg-green-500' };
+        if (lower.includes('hir') || lower.includes('join') || lower.includes('appoint')) return { label: 'Hire', color: 'badge-blue', dotColor: 'bg-blue-500' };
+        if (lower.includes('launch') || lower.includes('releas') || lower.includes('product')) return { label: 'Launch', color: 'badge-indigo', dotColor: 'bg-indigo-500' };
+        if (lower.includes('press') || lower.includes('featur') || lower.includes('award')) return { label: 'Press', color: 'badge-gray', dotColor: 'bg-amber-500' };
+        return { label: 'Update', color: 'badge-gray', dotColor: 'bg-gray-400' };
     };
 
     return (
-        <div className="relative pl-6">
-            {/* Vertical line */}
-            <div className="absolute left-2 top-2 bottom-2 w-px bg-border" />
-
+        <div className="relative pl-1">
             {sorted.map((signal, idx) => {
                 const category = getCategoryBadge(signal.text);
                 return (
-                    <div key={idx} className="relative pb-5 last:pb-0">
+                    <div key={idx} className="relative pb-6 last:pb-0 border-l border-border ml-2 pl-4">
                         {/* Dot */}
                         <div
-                            className="absolute -left-4 top-1.5 w-3 h-3 rounded-full bg-white border-2 border-primary"
+                            className={`absolute -left-[6px] top-1.5 w-3 h-3 rounded-full ${category.dotColor}`}
                         />
 
                         <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3">

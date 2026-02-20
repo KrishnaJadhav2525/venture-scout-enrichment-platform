@@ -84,12 +84,40 @@ export default function ListsPage() {
 
             {/* Lists */}
             {lists.length === 0 ? (
-                <div className="card p-12 text-center">
-                    <svg className="mx-auto mb-4 text-muted" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
-                    </svg>
-                    <h3 className="text-base font-semibold text-foreground mb-1">No lists yet</h3>
-                    <p className="text-sm text-muted">Start by saving a company from its profile.</p>
+                <div className="space-y-8">
+                    <div className="card p-12 text-center">
+                        <svg className="mx-auto mb-4 text-muted" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
+                        </svg>
+                        <h3 className="text-base font-semibold text-foreground mb-1">No lists yet</h3>
+                        <p className="text-sm text-muted">Start by saving a company from its profile.</p>
+                    </div>
+
+                    <div>
+                        <h4 className="text-sm font-semibold text-foreground mb-4 text-center">How it works</h4>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div className="bg-gray-50 rounded-xl border border-gray-100 p-4 text-center">
+                                <svg className="mx-auto mb-2 text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
+                                <h5 className="font-bold text-sm text-foreground mb-1">Browse Companies</h5>
+                                <p className="text-xs text-muted">Find startups that match your thesis</p>
+                            </div>
+                            <div className="bg-gray-50 rounded-xl border border-gray-100 p-4 text-center">
+                                <svg className="mx-auto mb-2 text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" /></svg>
+                                <h5 className="font-bold text-sm text-foreground mb-1">Save to List</h5>
+                                <p className="text-xs text-muted">Click Save to List on any company profile</p>
+                            </div>
+                            <div className="bg-gray-50 rounded-xl border border-gray-100 p-4 text-center">
+                                <svg className="mx-auto mb-2 text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" x2="12" y1="15" y2="3" /></svg>
+                                <h5 className="font-bold text-sm text-foreground mb-1">Export</h5>
+                                <p className="text-xs text-muted">Download your list as CSV or JSON anytime</p>
+                            </div>
+                        </div>
+                        <div className="mt-8 text-center">
+                            <Link href="/companies" className="inline-flex items-center gap-2 border border-indigo-400 text-indigo-600 rounded-md px-4 py-2 text-sm font-medium hover:bg-indigo-50 transition">
+                                ← Browse Companies
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             ) : (
                 <div className="space-y-4">

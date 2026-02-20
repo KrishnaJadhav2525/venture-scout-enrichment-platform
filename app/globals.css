@@ -169,8 +169,17 @@ body {
   background: #f1f5f9;
   color: #475569;
   border-radius: 4px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+  transition: all 0.15s ease;
+}
+
+.tag-chip:hover {
+  background-color: #e0e7ff;
+  color: #4338ca;
+  border-color: #a5b4fc;
 }
 
 /* Toast notification */

@@ -51,15 +51,18 @@ export default function NoteEditor({ companyId }: NoteEditorProps) {
                 placeholder="Write your analyst notes here..."
                 className="w-full min-h-[120px] p-3 text-sm border border-border rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-y transition-colors"
             />
-            
+
             <div className="flex items-center justify-between mt-3">
                 <span className="text-xs text-muted">{note.length} characters</span>
-                <button 
-                    onClick={handleSave} 
+                <button
+                    onClick={handleSave}
                     disabled={isSaveDisabled}
-                    className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
+                    className={`border rounded-md px-4 py-1.5 text-sm font-medium transition ${showToast
+                            ? 'border-green-400 text-green-600 bg-green-50'
+                            : 'border-indigo-400 text-indigo-600 hover:bg-indigo-50 ' + (isSaveDisabled ? 'opacity-40 cursor-not-allowed' : '')
+                        }`}
                 >
-                    Save Note
+                    {showToast ? 'Saved ✓' : 'Save Note'}
                 </button>
             </div>
 

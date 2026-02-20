@@ -182,7 +182,7 @@ export default function CompanyTable({ companies, totalCount, sortField, sortDir
                                                             key={tag}
                                                             href={`/companies?tag=${encodeURIComponent(tag)}`}
                                                             onClick={(e) => e.stopPropagation()}
-                                                            className="tag-chip hover:bg-slate-200 cursor-pointer transition-colors"
+                                                            className="tag-chip"
                                                         >
                                                             {tag}
                                                         </Link>
@@ -191,13 +191,15 @@ export default function CompanyTable({ companies, totalCount, sortField, sortDir
                                             </div>
                                         </td>
                                         <td className="px-4 py-3">
-                                            {typeof company.match === 'number' ? (
-                                                <div className={`inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs font-medium border ${company.match >= 80 ? 'bg-green-100 text-green-700 border-green-200' : company.match >= 50 ? 'bg-amber-100 text-amber-700 border-amber-200' : 'bg-gray-100 text-gray-700 border-gray-200'}`}>
-                                                    {company.match}%
-                                                </div>
-                                            ) : (
-                                                <span className="text-muted text-xs">—</span>
-                                            )}
+                                            <div
+                                                className={`inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs font-medium border ${(company.match ?? 0) >= 75 ? 'bg-green-100 text-green-700 border-green-200' :
+                                                    (company.match ?? 0) >= 50 ? 'bg-amber-100 text-amber-700 border-amber-200' :
+                                                        'bg-gray-100 text-gray-500 border-gray-200'
+                                                    }`}
+                                                title={company.matchedTags?.length ? `Matched: ${company.matchedTags.join(', ')}` : "No matches"}
+                                            >
+                                                {company.match ?? 0}%
+                                            </div>
                                         </td>
                                         <td className="px-4 py-3 text-muted">{company.industry}</td>
                                         <td className="px-4 py-3"><StageBadge stage={company.stage} /></td>
@@ -232,11 +234,15 @@ export default function CompanyTable({ companies, totalCount, sortField, sortDir
                                     />
                                     <h3 className="font-semibold text-lg text-foreground">{company.name}</h3>
                                 </div>
-                                {typeof company.match === 'number' && (
-                                    <div className={`inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs font-medium border ${company.match >= 80 ? 'bg-green-100 text-green-700 border-green-200' : company.match >= 50 ? 'bg-amber-100 text-amber-700 border-amber-200' : 'bg-gray-100 text-gray-700 border-gray-200'}`}>
-                                        {company.match}%
-                                    </div>
-                                )}
+                                <div
+                                    className={`inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs font-medium border ${(company.match ?? 0) >= 75 ? 'bg-green-100 text-green-700 border-green-200' :
+                                        (company.match ?? 0) >= 50 ? 'bg-amber-100 text-amber-700 border-amber-200' :
+                                            'bg-gray-100 text-gray-500 border-gray-200'
+                                        }`}
+                                    title={company.matchedTags?.length ? `Matched: ${company.matchedTags.join(', ')}` : "No matches"}
+                                >
+                                    {company.match ?? 0}%
+                                </div>
                             </div>
 
                             <div className="flex flex-wrap gap-2 mb-3 ml-8">
@@ -250,7 +256,7 @@ export default function CompanyTable({ companies, totalCount, sortField, sortDir
                                         key={tag}
                                         href={`/companies?tag=${encodeURIComponent(tag)}`}
                                         onClick={(e) => e.stopPropagation()}
-                                        className="tag-chip hover:bg-slate-200 cursor-pointer transition-colors"
+                                        className="tag-chip"
                                     >
                                         {tag}
                                     </Link>
