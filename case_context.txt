@@ -1,0 +1,21 @@
+Venture capital firms spend a meaningful share of their week on sourcing and triage: scanning
+inbound, parsing newsletters, searching databases, monitoring founder moves, and trying to catch
+early signals before a round is obvious. The work is repetitive, tool-fragmented, and highly
+thesis-dependent. What is a strong lead for one fund is pure noise for another, yet most workflows
+default to generic alerts, broad keyword searches, and manual spreadsheets.
+Problem statement: build a sourcing system that reliably turns the fund’s unique thesis into an
+always-on discovery workflow. The system should reduce noise, surface high-signal companies
+earlier, and make every recommendation explainable. Today, teams lose time to duplicates,
+inconsistent tagging, shallow profiles, and the inability to translate “what we invest in” into durable
+filters and repeatable scouting.
+Solution we are thinking about: a “precision AI scout for VCs” that combines (1) a modern intelligence
+interface for search, filters, profiles, lists, and saved searches, and (2) live enrichment that can pull
+and summarize public web data on demand. The user experience should feel like a real product:
+discover companies through fast search + faceted filters, open a profile, enrich it with real website
+content, generate an explainable score tied to the thesis, then take action (save to list, add notes,
+share/export). The system is designed to be highly customizable per fund (thesis-first), while
+remaining transparent about why a company matched and what sources were used.
+Competitors / references: Harmonic (harmonic.ai) for workflow inspiration; Cardinal (trycardinal.ai) as
+an example of thesis-oriented scouting; broader market references include PitchBook, Crunchbase,
+CB Insights, Affinity, Dealroom, Tracxn, and SourceScrub. These are reference points for interface
+patterns and data workflows, not an endorsement or a claim of feature parity.
