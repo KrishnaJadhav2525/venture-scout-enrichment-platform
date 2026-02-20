@@ -1,0 +1,342 @@
+[
+  {
+    "id": "razorpay",
+    "name": "Razorpay",
+    "website": "https://razorpay.com",
+    "industry": "Fintech",
+    "stage": "Series A",
+    "location": "Bangalore, India",
+    "founded": 2014,
+    "headcount": "51-200",
+    "description": "Full-stack payments and banking platform for businesses in India, offering payment gateway, payroll, and neobanking solutions.",
+    "tags": ["fintech", "payments", "b2b", "saas"],
+    "signals": [
+      { "date": "2024-11-15", "text": "Expanded to Southeast Asian markets" },
+      { "date": "2024-08-20", "text": "Launched Razorpay Rize for startups" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "zerodha",
+    "name": "Zerodha",
+    "website": "https://zerodha.com",
+    "industry": "Fintech",
+    "stage": "Series A",
+    "location": "Bangalore, India",
+    "founded": 2010,
+    "headcount": "51-200",
+    "description": "India's largest retail stockbroker offering a modern trading platform with zero brokerage on equity delivery trades.",
+    "tags": ["fintech", "trading", "b2c"],
+    "signals": [
+      { "date": "2024-10-05", "text": "Crossed 15 million active users" },
+      { "date": "2024-07-12", "text": "Launched new mutual fund platform" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "website": "https://www.postman.com",
+    "industry": "SaaS",
+    "stage": "Series A",
+    "location": "San Francisco, USA",
+    "founded": 2014,
+    "headcount": "51-200",
+    "description": "API development platform used by over 30 million developers for building, testing, and documenting APIs collaboratively.",
+    "tags": ["saas", "developer-tools", "api", "b2b"],
+    "signals": [
+      { "date": "2024-12-01", "text": "Released Postman Flows for API orchestration" },
+      { "date": "2024-09-10", "text": "Hosted POST/CON developer conference" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "cred",
+    "name": "CRED",
+    "website": "https://cred.club",
+    "industry": "Fintech",
+    "stage": "Series A",
+    "location": "Bangalore, India",
+    "founded": 2018,
+    "headcount": "51-200",
+    "description": "Members-only credit card management app that rewards users for paying bills on time with exclusive offers.",
+    "tags": ["fintech", "b2c", "rewards"],
+    "signals": [
+      { "date": "2024-11-20", "text": "Launched CRED Money — personal finance tracker" },
+      { "date": "2024-06-15", "text": "Expanded merchant partnerships to 5,000+ brands" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "website": "https://www.notion.so",
+    "industry": "SaaS",
+    "stage": "Series A",
+    "location": "San Francisco, USA",
+    "founded": 2016,
+    "headcount": "51-200",
+    "description": "All-in-one workspace for notes, docs, project management, and wikis used by teams and individuals worldwide.",
+    "tags": ["saas", "productivity", "b2b", "ai"],
+    "signals": [
+      { "date": "2024-10-25", "text": "Launched Notion AI with integrated writing assistant" },
+      { "date": "2024-08-01", "text": "Released Notion Calendar integration" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "practo",
+    "name": "Practo",
+    "website": "https://www.practo.com",
+    "industry": "HealthTech",
+    "stage": "Series A",
+    "location": "Bangalore, India",
+    "founded": 2008,
+    "headcount": "51-200",
+    "description": "Healthcare platform offering online doctor consultations, appointment booking, and health records management across India.",
+    "tags": ["healthtech", "b2c", "telemedicine"],
+    "signals": [
+      { "date": "2024-09-01", "text": "Added AI symptom checker feature" },
+      { "date": "2024-05-20", "text": "Partnered with 200+ hospitals for digital records" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "physicswallah",
+    "name": "PhysicsWallah",
+    "website": "https://www.pw.live",
+    "industry": "EdTech",
+    "stage": "Series A",
+    "location": "Noida, India",
+    "founded": 2020,
+    "headcount": "51-200",
+    "description": "Affordable edtech platform offering competitive exam preparation courses for engineering and medical entrance exams.",
+    "tags": ["edtech", "b2c", "ai"],
+    "signals": [
+      { "date": "2024-11-10", "text": "Launched offline learning centres in 50 cities" },
+      { "date": "2024-07-01", "text": "Introduced AI-powered doubt resolution" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "website": "https://linear.app",
+    "industry": "SaaS",
+    "stage": "Seed",
+    "location": "San Francisco, USA",
+    "founded": 2019,
+    "headcount": "11-50",
+    "description": "Streamlined issue tracking and project management tool designed for high-performance software teams.",
+    "tags": ["saas", "developer-tools", "b2b", "productivity"],
+    "signals": [
+      { "date": "2024-12-05", "text": "Released Linear Insights analytics dashboard" },
+      { "date": "2024-10-01", "text": "Launched customer support ticketing integration" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "replenit",
+    "name": "Replenit",
+    "website": "https://www.replenit.com",
+    "industry": "Climate",
+    "stage": "Seed",
+    "location": "Tel Aviv, Israel",
+    "founded": 2021,
+    "headcount": "11-50",
+    "description": "AI-powered inventory optimization platform for circular economy, helping retailers manage refill and reuse programs.",
+    "tags": ["climate", "ai", "b2b", "sustainability"],
+    "signals": [
+      { "date": "2024-10-15", "text": "Raised $4M seed round from climate-focused VCs" },
+      { "date": "2024-08-05", "text": "Partnered with major European retail chains" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face",
+    "website": "https://huggingface.co",
+    "industry": "DeepTech",
+    "stage": "Series A",
+    "location": "New York, USA",
+    "founded": 2016,
+    "headcount": "51-200",
+    "description": "The AI community's open-source hub for machine learning models, datasets, and collaborative ML development.",
+    "tags": ["deeptech", "ai", "open-source", "b2b"],
+    "signals": [
+      { "date": "2024-11-28", "text": "Launched new enterprise inference API" },
+      { "date": "2024-09-20", "text": "Open-sourced new multilingual model family" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "mamaearth",
+    "name": "Mamaearth",
+    "website": "https://mamaearth.in",
+    "industry": "D2C",
+    "stage": "Series A",
+    "location": "Gurugram, India",
+    "founded": 2016,
+    "headcount": "51-200",
+    "description": "Toxin-free personal care and beauty brand offering natural, safe products for babies and adults in India.",
+    "tags": ["d2c", "b2c", "consumer"],
+    "signals": [
+      { "date": "2024-10-10", "text": "IPO on BSE and NSE exchanges" },
+      { "date": "2024-07-22", "text": "Launched premium skincare sub-brand" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel",
+    "website": "https://vercel.com",
+    "industry": "SaaS",
+    "stage": "Series A",
+    "location": "San Francisco, USA",
+    "founded": 2015,
+    "headcount": "51-200",
+    "description": "Frontend cloud platform enabling developers to build and deploy web applications with zero configuration.",
+    "tags": ["saas", "developer-tools", "cloud", "b2b"],
+    "signals": [
+      { "date": "2024-12-10", "text": "Released Next.js 15 with enhanced caching" },
+      { "date": "2024-09-25", "text": "Launched Vercel AI SDK 3.0" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "ather-energy",
+    "name": "Ather Energy",
+    "website": "https://www.atherenergy.com",
+    "industry": "Climate",
+    "stage": "Series A",
+    "location": "Bangalore, India",
+    "founded": 2013,
+    "headcount": "51-200",
+    "description": "Electric two-wheeler manufacturer building smart, connected scooters with proprietary charging infrastructure in India.",
+    "tags": ["climate", "ev", "hardware", "b2c"],
+    "signals": [
+      { "date": "2024-11-01", "text": "Expanded Ather Grid charging to 100 cities" },
+      { "date": "2024-08-15", "text": "Launched Ather Rizta family scooter" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "doppio",
+    "name": "Doppio",
+    "website": "https://doppio.sh",
+    "industry": "SaaS",
+    "stage": "Pre-seed",
+    "location": "London, UK",
+    "founded": 2022,
+    "headcount": "1-10",
+    "description": "API-first document generation platform enabling developers to create PDFs, screenshots, and documents at scale.",
+    "tags": ["saas", "developer-tools", "api", "b2b"],
+    "signals": [
+      { "date": "2024-09-15", "text": "Launched v2 API with template support" },
+      { "date": "2024-06-01", "text": "Reached 1,000 developer signups" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "krutrim",
+    "name": "Krutrim",
+    "website": "https://www.olakrutrim.com",
+    "industry": "DeepTech",
+    "stage": "Seed",
+    "location": "Bangalore, India",
+    "founded": 2023,
+    "headcount": "11-50",
+    "description": "India's first homegrown AI company building multilingual large language models for Indian languages and use cases.",
+    "tags": ["deeptech", "ai", "llm"],
+    "signals": [
+      { "date": "2024-11-05", "text": "Launched Krutrim Cloud for AI workloads" },
+      { "date": "2024-08-20", "text": "Released multilingual chatbot supporting 22 Indian languages" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "healthifyme",
+    "name": "HealthifyMe",
+    "website": "https://www.healthifyme.com",
+    "industry": "HealthTech",
+    "stage": "Series A",
+    "location": "Bangalore, India",
+    "founded": 2012,
+    "headcount": "51-200",
+    "description": "AI-powered health and fitness app providing calorie tracking, diet plans, and personal coaching for weight management.",
+    "tags": ["healthtech", "ai", "b2c", "fitness"],
+    "signals": [
+      { "date": "2024-10-20", "text": "Launched AI nutritionist 'Ria 2.0'" },
+      { "date": "2024-07-10", "text": "Expanded to Middle East and Southeast Asia" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "smallcase",
+    "name": "smallcase",
+    "website": "https://www.smallcase.com",
+    "industry": "Fintech",
+    "stage": "Seed",
+    "location": "Bangalore, India",
+    "founded": 2015,
+    "headcount": "11-50",
+    "description": "Thematic investing platform allowing retail investors to invest in curated baskets of stocks and ETFs.",
+    "tags": ["fintech", "investing", "b2c"],
+    "signals": [
+      { "date": "2024-09-30", "text": "Crossed ₹50,000 crore in transaction value" },
+      { "date": "2024-06-15", "text": "Launched fixed income smallcases" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "teachmint",
+    "name": "Teachmint",
+    "website": "https://www.teachmint.com",
+    "industry": "EdTech",
+    "stage": "Seed",
+    "location": "Bangalore, India",
+    "founded": 2020,
+    "headcount": "11-50",
+    "description": "Infrastructure platform for educational institutions providing classroom management, LMS, and school ERP solutions.",
+    "tags": ["edtech", "saas", "b2b"],
+    "signals": [
+      { "date": "2024-10-01", "text": "Onboarded 10,000+ educational institutions" },
+      { "date": "2024-07-15", "text": "Launched AI-powered assessment generator" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "carbonchain",
+    "name": "CarbonChain",
+    "website": "https://www.carbonchain.com",
+    "industry": "Climate",
+    "stage": "Seed",
+    "location": "London, UK",
+    "founded": 2019,
+    "headcount": "11-50",
+    "description": "Carbon accounting platform helping commodity traders and miners track and report emissions across supply chains.",
+    "tags": ["climate", "b2b", "sustainability", "saas"],
+    "signals": [
+      { "date": "2024-11-12", "text": "Secured partnership with top 5 global commodity trader" },
+      { "date": "2024-08-01", "text": "Launched Scope 3 emissions tracking module" }
+    ],
+    "enriched": null
+  },
+  {
+    "id": "inkredo",
+    "name": "Inkredo",
+    "website": "https://inkredo.in",
+    "industry": "B2B",
+    "stage": "Pre-seed",
+    "location": "Mumbai, India",
+    "founded": 2021,
+    "headcount": "1-10",
+    "description": "Bank statement analysis and financial data extraction API for lenders, enabling faster credit underwriting decisions.",
+    "tags": ["b2b", "fintech", "api", "ai"],
+    "signals": [
+      { "date": "2024-08-10", "text": "Processed 1 million bank statements" },
+      { "date": "2024-05-01", "text": "Launched real-time fraud detection module" }
+    ],
+    "enriched": null
+  }
+]
